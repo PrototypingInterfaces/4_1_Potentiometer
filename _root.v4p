@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
    <PATCH nodename="C:\Users\JL\Documents\GitHub\4_1_Potentiometer\_root.v4p" filename="C:\Users\jancouver\Desktop\Tutorials\Potentiometer\Basic\Potentiometer_Basic.v4p" systemname="Potentiometer_Basic">
    <BOUNDS height="19800" left="0" top="0" type="Window" width="10950">
    </BOUNDS>
@@ -243,7 +243,7 @@
    </PIN>
    <PIN pinname="Size" slicecount="1" values="15">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="832.277777777778">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="320" systemname="IOBox (Enumerations)">
@@ -251,7 +251,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5280" top="4725" width="765" height="240">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" values="COM20">
+   <PIN pinname="Input Enum" slicecount="1" values="COM23">
    </PIN>
    <PIN pinname="Output Enum" visible="1">
    </PIN>
@@ -277,9 +277,9 @@
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="681.999999999999">
+   <PIN pinname="X Input Value" slicecount="1" values="1023">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="386.875">
+   <PIN pinname="Y Input Value" slicecount="1" values="715.833333333333">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -1115,7 +1115,7 @@
    </BOUNDS>
    <PIN pinname="Potentiometer output" visible="1">
    </PIN>
-   <PIN pinname="Simulate Poti" visible="1">
+   <PIN pinname="Simulate Poti" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Reset" visible="1">
    </PIN>
@@ -1127,9 +1127,9 @@
    </PIN>
    <PIN pinname="Destination Width" visible="1">
    </PIN>
+   <BOUNDS type="Window" left="4335" top="1710" width="10950" height="11700">
+   </BOUNDS>
    </NODE>
-   <LINK srcnodeid="100041" srcpinname="Potentiometer output" dstnodeid="319" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="321" srcpinname="Y Output Value" dstnodeid="100041" dstpinname="Simulate Poti">
    </LINK>
    <LINK srcnodeid="261" srcpinname="Y Output Value" dstnodeid="100041" dstpinname="Reset">
@@ -1167,5 +1167,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="100042" srcpinname="Y Output Value" dstnodeid="100041" dstpinname="Update Port List">
+   </LINK>
+   <LINK srcnodeid="100041" srcpinname="Potentiometer output" dstnodeid="319" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
